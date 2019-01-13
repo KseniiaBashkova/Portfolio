@@ -22,7 +22,8 @@ class Authenticator implements Security\IAuthenticator
      */
     public function authenticate(array $credentials): IIdentity
     {
-        [$email, $password] = $credentials;
+        $email = $credentials[0];
+        $password = $credentials[1];
         $row = $this->database->table('user')->where('email', $email)->fetch();
         if (!$row) {
             throw new Security\AuthenticationException('The username is incorrect.', self::IDENTITY_NOT_FOUND);
