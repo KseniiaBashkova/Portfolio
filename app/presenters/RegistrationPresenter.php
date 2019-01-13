@@ -42,7 +42,10 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
         // volá se po úspěšném odeslání formuláře
         $form->onSuccess[] = function() use ($form) {
             $values = $form->getValues();
+            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "posts"')['max'] + 1;
+
             $this->database->table('user')->insert([
+                'id' => $lastId,
                 'name' => $values->name,
                 'email' => $values->email,
                 'password_hash' => \Nette\Security\Passwords::hash($values->pwd),
