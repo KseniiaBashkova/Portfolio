@@ -48,7 +48,7 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
 
         $form->onSuccess[] = function () use ($form) {
             $values = $form->getValues();
-            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "posts"')['max'] + 1;
+            $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "user"')['max'] + 1;
 
 //          Vlkadani prvku do tabulky 'posts' in database
             $this->database->table('posts')->insert([
