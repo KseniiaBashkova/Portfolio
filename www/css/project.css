@@ -1,0 +1,75 @@
+
+/* HEADER */
+
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+
+.logo {
+  display: inline-block; 
+  font-family: Helvetica ,Helvetica,Arial,sans-serif; 
+  /*font-size: 100px;*/
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {
+  display: inline-block;
+  font-size: 70px
+}
+
+.menu-main a {
+  /*padding-bottom: 10% ;*/
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-family: 'Arimo', sans-serif;
+  /*font-weight: bold;*/
+  color: black;
+}
+
+/* PICTURIES */
+
+/* FORM */
+
+.karkas  {
+  padding-left: 4.5%;
+  padding-top: 3%;
+  background: rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.kartinka{
+  padding: 0.5%;
+  border-bottom-width: 5px ;
+  background-color: #FFFFFF;
+}
+.highslide img {
+border: 2px solid silver;
+padding: 5%; /*Поля вокруг obrazka */
+}
+/* при наведении на картинку граница меняет цвет */
+.highslide:hover img {
+border-color: gray;
+}
+
+a.highslide-credits,
+a.highslide-credits i {
+padding: 2px;
+color: silver;
+text-decoration: none;
+font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+color: white;
+background-color: gray;
+}

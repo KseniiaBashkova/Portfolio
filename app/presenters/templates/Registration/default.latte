@@ -1,0 +1,33 @@
+{block content}
+
+<div class="forumPage">
+    <header>
+        <nav class="top-menu-forum">
+            <a class="logo">Registration </a>
+        </nav>
+    </header>
+
+    <div class="forum">
+        <a n:href="Homepage:default">
+            <input type="button" id="return"  value="Return home">
+        </a>
+    </div>
+
+    <div class="registrace">
+        <fieldset id="reg">
+            <form n:name=formRegistration class=form id="text-wrap1">
+                <label n:name=name>Name: <input n:name=name></label>
+                <label n:name=email>Email: <input n:name=email></label>
+                <label n:name=pwd>Password:<input n:name=pwd></label>
+                {*<label n:name=pwd2>Password again:<input n:name=pwd2></label>*}
+                <label><input id="send" n:name=register></label>
+                <div n:if="$form->hasErrors()" class="alert">
+                    <li style="color: black" n:foreach="$form->errors as $error">{$error}</li>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</div>
+
+{/block}
+

@@ -1,0 +1,248 @@
+
+#leftstr {
+    float: left; /* Обтекание справа */
+    width: 50%; /* Ширина текстового блока */
+}
+#rightstr {
+    text-align: right; /* Выравнивание по правому краю */
+    margin-top: 20px;
+}
+.autor{
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    overflow-y: auto;
+
+}
+.content{
+    background-color: white;
+    /*width: 100px*/
+}
+.buh{
+    background-color: aqua;
+}
+.registrace{
+    padding-top: 10%;
+}
+
+/*label*/
+label {
+    margin: 0.5em;
+    display: block;
+    font-size: 30px;
+}
+
+#tlacitko{
+    background-color: darkgrey;
+    font-size: 20px;
+    /*width: 200px;*/
+    /*width: 100px;*/
+    /*margin-left: 85%;*/
+    /*margin-left: 300px;*/
+}
+
+
+.form input{
+    position: absolute;
+    left: 50%;
+    margin: 0.6em;
+    /*width: 200px;*/
+}
+
+#reg{
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    height: 300px;
+    padding-bottom: 1%;
+    background: rgba(255, 52, 0, 0.59);
+    border: 2px solid;
+}
+
+/*fotka pozadi*/
+
+.forumPage {
+    height: 800px;
+    min-height: 100%;
+    background-image: url(../../www/forumImages/IXH0NSHLlrw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #c7b39b;
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+    background: #ebeff2;
+}
+body {
+    min-height: 100%;
+    background: #ebeff2;
+}
+
+/*HEADER*/
+.top-menu-forum {
+    background: rgba(255,255,255,.5);
+    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+.logo {
+    display: inline-block;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 50px;
+}
+.forum{
+    padding-top: 2%;
+}
+.page-wrapper{
+    min-height: 100%;
+}
+
+#return{
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #FFFFFF 5%,indianred  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+}
+#pole1{
+    position: absolute;
+    /*margin-bottom: 5px;*/
+    right: 20%;
+    left: 20%;
+    height: 60%;
+    padding-bottom: 1%;
+    background: rgba(255, 52, 0, 0.59);
+    border: 2px solid;
+    z-index: 2;
+    box-shadow: 8px 0 20px rgba(0, 0, 0, 0.48);
+}
+
+#pole2{
+    margin-bottom: 2%;
+    position: absolute;
+    right: 20%;
+    left: 20%;
+    bottom: 0;
+    height: 64px;
+    background: rgba(255, 52, 0, 0.59);
+    border: 2px solid black;
+    padding: 10px;
+    z-index: 2;
+    box-shadow: 8px 0 20px rgba(0, 0, 0, 0.48);
+
+}
+#text-wrap1 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    height: 100%;
+    margin: auto 0;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 254, 254, 0.61);
+    overflow: hidden;
+    text-align: left;
+    overflow-y: auto;
+    word-wrap: break-word;
+    display: block;
+}
+#text-wrap2 {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    height: 60px;
+    margin: auto 0;
+    padding: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 254, 254, 0.61);
+    overflow: hidden;
+}
+
+
+#text {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    bottom: 0;
+    left: 0;
+    margin: 3px 5px;
+    font-size: 15px;
+    color: #2D2D2D;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: text;
+}
+#komentare{
+    position: absolute;
+    top: 0;
+    right: 65px;
+    bottom: 0;
+    left: 0;
+    margin: 3px 5px;
+    font-size: 15px;
+    color: #2D2D2D;
+    cursor: text;
+}
+
+.odeslat{
+    font-size: 20px;
+    margin-left: 83%;
+    padding: 10px;
+    margin-top: 1%;
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #FFFFFF 5%, indianred  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.user{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1%;
+    padding: 10px;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #FFFFFF 5%, indianred  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+
+textarea{
+    width: 97%;
+    position: absolute;
+    height: 75%;
+}
+

@@ -1,0 +1,32 @@
+{block content}
+<header>
+	<nav class="top-menu">
+		<a class="logo">Evgeniia Bashkova </a>
+
+		<ul class="menu-main">
+			<li><a href="https://www.facebook.com/profile.php?id=100010282621443"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoCp0evDPpSdwMytudQC5_5olRe3GsD9YxV3-7q9hd0M-jimVew" width="50" height="50" alt="Facebook" /></a></li>
+			<li><a href="https://vk.com/bshkarik"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbR9sueYugiXpeuuap1ZbS-puS_FJ2m9lUi0-FadjzsBwZhYNZ8g"  width="50" height="50" alt="Vk" /></a></li>
+			<li><a href="https://www.instagram.com/bashkovskayaa/?utm_source=ig_profile_share&igshid=5no9wxpos7e1"> <img src="https://pp.userapi.com/c630522/v630522304/2b811/JCDwevVeMKA.jpg?ava=1"  width="50" height="50" alt="Instagram" /></a></li>
+			<li><a n:href="Forum:default">FORUM</a></li>
+			<li><a n:href="Registration:default">REGISTRATION/</a></li>
+
+			{if $user->loggedIn}
+				<li><a n:href="Sign:out">LOG OUT</a></li>
+			{else}
+				<li><a n:href="Sign:">LOG IN</a></li>
+			{/if}
+
+		</ul>
+	</nav>
+</header>
+
+<div class="wrap">
+	<div class="karkas">
+		{foreach $posts as $post}
+			<a href={$post} class="highslide" onclick="return hs.expand(this)">
+				<img class="kartinka" src={$post} alt="photo1" title="bear" width="400" height="400">
+			</a>
+		{/foreach}
+	</div>
+</div>
+{/block}

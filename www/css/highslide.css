@@ -1,0 +1,39 @@
+
+/*!* картинка имеет границу цвет *!*/
+/*.highslide img {*/
+	/*border: 2px solid silver;*/
+	/*!*margin: 5px;*!*/
+	/*!*width: 23%;*!*/
+	/*padding: 5%; !*Поля вокруг obrazka *!*/
+/*}*/
+/*!* при наведении на картинку граница меняет цвет *!*/
+/*.highslide:hover img {*/
+	/*border-color: gray;*/
+/*}*/
+/*a.highslide-credits,*/
+/*a.highslide-credits i {*/
+	/*padding: 2px;*/
+	/*color: silver;*/
+	/*text-decoration: none;*/
+	/*font-size: 10px;*/
+/*}*/
+/*a.highslide-credits:hover,*/
+/*a.highslide-credits:hover i {*/
+	/*color: white;*/
+	/*background-color: gray;*/
+/*}*/
+/*.highslide-move, .highslide-move * {*/
+	/*cursor: move;*/
+/*}*/
+/* когда открываешь картинку снизу попис */
+/*.highslide-caption {*/
+	/*display: none;*/
+	/*font-size: 2em;*/
+	/*padding: 5px;*/
+	/*background: rgb(226, 223, 223);*/
+/*}*/
+/*.highslide-heading {*/
+	/*display: none;*/
+	/*font-weight: bold;*/
+	/*margin: 0.4em;*/
+/*}*/

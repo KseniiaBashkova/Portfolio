@@ -1,0 +1,42 @@
+{block content}
+
+<div class="forumPage">
+
+        <header>
+            <nav class="top-menu-forum">
+                <a class="logo">Chat</a>
+            </nav>
+        </header>
+        <div class="forum">
+            <a n:href="Homepage:default">
+            <input type="button" id="return"  value="Return home">
+            </a>
+        </div>
+        <fieldset id="pole1">
+            <div id="text-wrap1">
+                {foreach $content as $cont}
+                    <p id="leftstr">{$cont->autor}: {$cont->content}</p>
+                    <div id="rightstr">{$cont->created_at}</div>
+                    <div style="clear: left"></div>
+                {/foreach}
+            </div>
+        </fieldset>
+        <fieldset id="pole2">
+            <form action="/portfolio/www/forum/" method="post" id="frm-commentForm">
+                <p class="user">User:<br> {$user}</p>
+
+                <div id="text-wrap2">
+                    <textarea name="content" id="frm-commentForm-content" required=""></textarea>
+                </div>
+                <input class="odeslat" type="submit" name="send" value="Send" >
+                <input type="hidden" name="_do" value="commentForm-submit"><input type=IEbug disabled style="display:none">
+
+            </form>
+        </fieldset>
+</div>
+
+
+
+{/block}
+
+

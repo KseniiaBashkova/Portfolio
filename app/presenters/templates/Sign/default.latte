@@ -1,0 +1,29 @@
+{block content}
+    <div class="forumPage">
+        <header>
+            <nav class="top-menu-forum">
+                <a class="logo">Sign </a>
+            </nav>
+        </header>
+            <div class="forum">
+                <a n:href="Homepage:default">
+                    <input type="button" id="return"  value="Return home">
+                </a>
+            </div>
+        <div class="registrace">
+        <fieldset id="reg">
+            <form n:name=signInForm class=form id="text-wrap1">
+                <h1 style="color: red">To add comment you need to sign in</h1>
+
+                <label n:name=username>Email: <input n:name=username></label>
+                <label n:name=password>Password: <input n:name=password></label>
+                <label><input  n:name=send id="send" class="btn btn-default"></label>
+                {*<div n:if="$form->hasErrors()" class="alert">*}
+                    {*<li style="color: black" n:foreach="$form->errors as $error">{$error}</li>*}
+                {*</div>*}
+            </form>
+        </fieldset>
+        </div>
+    </div>
+{*{control signInForm}*}
+{/block}
