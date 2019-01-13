@@ -57,8 +57,10 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
                 'content' => $values->content,
                 'created_at' => date('d.m.Y')
             ]);
-            $this->redirect('Forum:default');
+        };
 
+        $form->onSuccess[] = function() {
+            $this->redirect('Forum:default');
         };
 
         return $form;
