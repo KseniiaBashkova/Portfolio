@@ -25,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/presenters/RegistrationPresenter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/presenters/ForumPresenter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="50" selection-start-line="50" selection-end-line="51" />
+            <state relative-caret-position="219">
+              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -175,13 +175,13 @@
         <option value="$PROJECT_DIR$/app/presenters/templates/Registration/default.latte" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Forum/default.latte" />
-        <option value="$PROJECT_DIR$/app/presenters/ForumPresenter.php" />
         <option value="$PROJECT_DIR$/app/config/config.neon" />
         <option value="$PROJECT_DIR$/app/presenters/Nette/Security/AuthenticationException.php" />
         <option value="$PROJECT_DIR$/app/presenters/templates/Sign/default.latte" />
         <option value="$PROJECT_DIR$/app/presenters/SignPresenter.php" />
         <option value="$PROJECT_DIR$/app/Model/Authenticator.php" />
         <option value="$PROJECT_DIR$/app/presenters/RegistrationPresenter.php" />
+        <option value="$PROJECT_DIR$/app/presenters/ForumPresenter.php" />
       </list>
     </option>
   </component>
@@ -395,12 +395,12 @@
       <workItem from="1546455577866" duration="411000" />
       <workItem from="1546456013804" duration="9326000" />
       <workItem from="1546515724869" duration="98676000" />
-      <workItem from="1547118731819" duration="60654000" />
+      <workItem from="1547118731819" duration="61347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169176000" />
+    <option name="totallyTimeSpent" value="169869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -689,6 +689,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/SignPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/presenters/RegistrationPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/templates/Forum/default.latte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -702,22 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/presenters/ForumPresenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="50" selection-start-line="50" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/presenters/SignPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/presenters/RegistrationPresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="219">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
         </state>
       </provider>
     </entry>
