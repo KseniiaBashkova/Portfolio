@@ -20,7 +20,7 @@
                 <label n:name=email>Email: <input n:name=email></label>
                 <label n:name=pwd>Password:<input n:name=pwd></label>
                 {*<label n:name=pwd2>Password again:<input n:name=pwd2></label>*}
-                <label for="send"></label><input id="send" n:name=register>
+                <label><button id="send" n:name=register>Registration</button></label>
                 <div n:if="$form->hasErrors()" class="alert">
                     <li style="color: black" n:foreach="$form->errors as $error">{$error}</li>
                 </div>
