@@ -21,9 +21,9 @@
 .buh{
     background-color: aqua;
 }
-.registrace{
-    padding-top: 10%;
-}
+/*.registrace{*/
+    /*padding-top: 10%;*/
+/*}*/
 
 /*label*/
 label {
@@ -35,10 +35,6 @@ label {
 #tlacitko{
     background-color: darkgrey;
     font-size: 20px;
-    /*width: 200px;*/
-    /*width: 100px;*/
-    /*margin-left: 85%;*/
-    /*margin-left: 300px;*/
 }
 
 
@@ -46,7 +42,6 @@ label {
     position: absolute;
     left: 50%;
     margin: 0.6em;
-    /*width: 200px;*/
 }
 
 #reg{
@@ -62,11 +57,11 @@ label {
 /*fotka pozadi*/
 
 .forumPage {
-    height: 800px;
+    height: 1000px;
     min-height: 100%;
     background-image: url(../../www/forumImages/IXH0NSHLlrw.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 130%;
     background-attachment: fixed;
     background-color: #c7b39b;
     overflow: hidden;
