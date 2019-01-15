@@ -43,6 +43,8 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
 
         $form->addSubmit('register', 'Register');
 
+        $form->addProtection("zakaz");
+
         // volá se po úspěšném odeslání formuláře
         $form->onSuccess[] = function() use ($form) {
             $values = $form->getValues();
