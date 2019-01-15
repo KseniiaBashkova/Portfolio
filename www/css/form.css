@@ -1,49 +1,12 @@
 
-#leftstr {
-    float: left; /* Обтекание справа */
-    width: 50%; /* Ширина текстового блока */
+/*REGISTRACE*/
+/*warning "Password must be 4-8 digits long" na strance Registrace*/
+.warningPassword{
+    text-align: left;
+    font-size: small;
+    padding-left: 3%;
 }
-#rightstr {
-    text-align: right; /* Выравнивание по правому краю */
-    margin-top: 20px;
-}
-.autor{
-    background-color: white;
-    width: 150px;
-    text-align: center;
-    overflow-y: auto;
-
-}
-.content{
-    background-color: white;
-    /*width: 100px*/
-}
-.buh{
-    background-color: aqua;
-}
-/*.registrace{*/
-    /*padding-top: 10%;*/
-/*}*/
-
-/*label*/
-label {
-    margin: 0.5em;
-    display: block;
-    font-size: 30px;
-}
-
-#tlacitko{
-    background-color: darkgrey;
-    font-size: 20px;
-}
-
-
-.form input{
-    position: absolute;
-    left: 50%;
-    margin: 0.6em;
-}
-
+/*fieldset na strance Registrace a LOG IN*/
 #reg{
     position: absolute;
     right: 20%;
@@ -54,7 +17,23 @@ label {
     border: 2px solid;
 }
 
-/*fotka pozadi*/
+/*label*/
+label {
+    margin: 0.5em;
+    display: block;
+    font-size: 30px;
+}
+
+
+/*input na strance Registrace a LOG IN*/
+.form input{
+    position: absolute;
+    left: 50%;
+    margin: 0.6em;
+}
+
+
+/*FOTKA POZADI na vsech strankach krome Homepage*/
 
 .forumPage {
     height: 1000px;
@@ -66,7 +45,6 @@ label {
     background-color: #c7b39b;
     overflow: hidden;
 }
-
 html {
     height: 100%;
     background: #ebeff2;
@@ -76,7 +54,7 @@ body {
     background: #ebeff2;
 }
 
-/*HEADER*/
+/*HEADER PRO STRANKY FORUM, REGISTRACE, LOG IN*/
 .top-menu-forum {
     background: rgba(255,255,255,.5);
     box-shadow: 3px 0 7px rgba(0,0,0,.3);
@@ -89,13 +67,15 @@ body {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
     font-size: 50px;
 }
+/*------------------------------------------------------------------------*/
+/*STRANKA FORUM*/
 .forum{
     padding-top: 2%;
 }
 .page-wrapper{
     min-height: 100%;
 }
-
+/*tlacitko return home. Pouziva se na strankach Registrace a Forum*/
 #return{
     position: absolute;
     text-decoration: none;
@@ -110,9 +90,9 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,.1);
     transition: .5s;
 }
+/*horni fieldset */
 #pole1{
     position: absolute;
-    /*margin-bottom: 5px;*/
     right: 20%;
     left: 20%;
     height: 60%;
@@ -122,7 +102,7 @@ body {
     z-index: 2;
     box-shadow: 8px 0 20px rgba(0, 0, 0, 0.48);
 }
-
+/*dolni fieldset*/
 #pole2{
     margin-bottom: 2%;
     position: absolute;
@@ -137,6 +117,7 @@ body {
     box-shadow: 8px 0 20px rgba(0, 0, 0, 0.48);
 
 }
+/*pole pro vypis komentaru na strance Forum, nebo pole pro Registrace a SIGN IN*/
 #text-wrap1 {
     position: absolute;
     top: 0;
@@ -156,6 +137,7 @@ body {
     word-wrap: break-word;
     display: block;
 }
+/*pole pro zapis komentaru*/
 #text-wrap2 {
     position: absolute;
     top: 0;
@@ -173,33 +155,7 @@ body {
 }
 
 
-#text {
-    position: absolute;
-    top: 0;
-    right: 65px;
-    bottom: 0;
-    left: 0;
-    margin: 3px 5px;
-    font-size: 15px;
-    color: #2D2D2D;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-x: hidden;
-    overflow-y: auto;
-    cursor: text;
-}
-#komentare{
-    position: absolute;
-    top: 0;
-    right: 65px;
-    bottom: 0;
-    left: 0;
-    margin: 3px 5px;
-    font-size: 15px;
-    color: #2D2D2D;
-    cursor: text;
-}
-
+/*tlacitko send na Forum*/
 .odeslat{
     font-size: 20px;
     margin-left: 83%;
@@ -217,6 +173,7 @@ body {
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
+/*okinko "user" ktery je prave prihlasen na Forum */
 .user{
     text-align: center;
     font-size: 15px;
@@ -234,7 +191,18 @@ body {
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
 }
+/*leva strana text-wrap1*/
+#leftstr {
+    float: left;
+    width: 50%;
+}
+/*prava strana text-wrap1*/
+#rightstr {
+    text-align: right;
+    margin-top: 20px;
+}
 
+/*textarea pro nechavani komentaru*/
 textarea{
     width: 97%;
     position: absolute;

@@ -3,7 +3,6 @@
 
 namespace App\Presenters;
 
-
 use Nette\Application\UI\Form;
 
 class ForumPresenter extends  \Nette\Application\UI\Presenter
@@ -11,6 +10,10 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
 //    pripojeni k databazi
     private $database;
 
+    /**
+     * ForumPresenter constructor.
+     * @param \Nette\Database\Context $database
+     */
     public function __construct(\Nette\Database\Context $database)
     {
         $this->database = $database;
@@ -46,6 +49,8 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
 
         $form->addSubmit('send', 'Send');
 
+        // volá se po úspěšném odeslání formuláře
+
         $form->onSuccess[] = function () use ($form) {
             $values = $form->getValues();
             $lastId = (int)$this->database->fetch('SELECT MAX("id") FROM "posts"')['max'] + 1;
@@ -65,20 +70,5 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
 
         return $form;
     }
-//    public function actionCreate()
-//    {
-//        if (!$this->getUser()->isLoggedIn()) {
-//            $this->redirect('Sign:in');
-//        }
-//    }
-//
-//    public function renderShow($postId)
-//    {
-//        $this->template->post = $this->database->table('posts')->get($postId);
-//        $this->template->post = $post;
-//        $this->template->comments = $post->related('comment')->order('created_at');
-//    }
-//
-
 
 }

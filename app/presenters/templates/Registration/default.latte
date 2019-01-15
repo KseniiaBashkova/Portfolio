@@ -16,18 +16,27 @@
     <div class="registrace">
         <fieldset id="reg">
             <form n:name=formRegistration class=form id="text-wrap1">
-                <label n:name=name>Name: <input n:name=name></label>
-                <label n:name=email>Email: <input n:name=email></label>
-                <label n:name=pwd>Password:<input n:name=pwd></label>
-                {*<label n:name=pwd2>Password again:<input n:name=pwd2></label>*}
-                <label><input id="send" n:name=register></label>
+                <label n:name=name>Name* <input n:name=name></label>
+                <label n:name=email>Email* <input  n:name=email></label>
+                <p class="warningPassword">Password must be 4-8 digits long</p>
+                <label n:name=pwd>Password*<input id="password" n:name=pwd></label>
+                <label><input id="validate" n:name=register></label>
+                <p id="validace"></p>
                 <div n:if="$form->hasErrors()" class="alert">
-                    <li style="color: black" n:foreach="$form->errors as $error">{$error}</li>
+                    <div n:if="$form->hasErrors()" class="alert">
+                        <p style="color:red; position: relative; padding-top: 15%; left: 15%" n:foreach="$form->errors as $error">{$error}</p>
+                    </div>
                 </div>
             </form>
         </fieldset>
     </div>
 </div>
+
+    {*validace*}
+<script>
+    $("#validate").bind("click", validate);
+</script>
+
 
 {/block}
 

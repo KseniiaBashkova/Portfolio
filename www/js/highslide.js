@@ -1,12 +1,8 @@
-
+hs.graphicsDir = 'css/graphics/';
 if (!hs) { var hs = {
 // Language strings
 lang : {
-	// cssDirection: 'ltr',
-	// loadingText : 'Loading...',
-	// loadingTitle : 'Click to cancel',
-	// focusTitle : 'Click to bring to front',
-	// fullExpandTitle : 'Expand to actual size (f)',
+
 	creditsText : 'Designed by Evgeniia Bashkova</i>',
 	creditsTitle : 'Go to the Highslide JS homepage',
 	restoreTitle : 'Click to close image, click and drag to move. Use arrow keys for next and previous.'
@@ -25,8 +21,7 @@ marginBottom : 15,
 zIndexCounter : 1001, // adjust to other absolutely positioned elements
 loadingOpacity : 0.75,
 allowMultipleInstances: true,
-// numberOfImagesToPreload : 5,
-outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only 
+outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only
 outlineStartOffset : 3, // ends at 10
 padToMinWidth : false, // pad the popup width to make room for wide caption
 fullExpandPosition : 'bottom right',

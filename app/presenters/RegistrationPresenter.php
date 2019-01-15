@@ -11,31 +11,35 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
 
     private $database;
 
+    /**
+     * RegistrationPresenter constructor.
+     * @param \Nette\Database\Context $database
+     */
     public function __construct(\Nette\Database\Context $database)
     {
         $this->database = $database;
     }
 
-    //formulář a validace na úrovni jednotlivých políček
+    //formulář a validace na úrovni jednotlivých položek
 
+    /**
+     * @return Form
+     */
     protected function createComponentFormRegistration()
     {
 
         $form = new \Nette\Application\UI\Form();
 
-        $form->addText('name', 'Name')->setRequired('please');
-//            ->addRule($form::);
+        $form->addText('name', 'Name')
+            ->setRequired('please');
 
-        $form->addEmail('email', 'Email')->setRequired('Please enter email')
-        ->addRule(Form::EMAIL, 'email neplatny');
+        $form->addEmail('email', 'Email')
+            ->setRequired('Please enter email')
+            ->addRule(Form::EMAIL, 'email neplatny');
 
         $form->addPassword('pwd', 'Password')
-            ->setRequired('Please, enter password')
-            ->addRule(Form::MIN_LENGTH, 'Your password has to be at least %d long', 5);
+            ->setRequired('Please, enter password');
 
-//        $form->addPassword('pwd2', 'Password (again)')
-//            ->setRequired('Please enter password for verification')
-//            ->addRule($form::EQUAL, 'Password verification failed. Passwords do not match', $passwordInput);
 
         $form->addSubmit('register', 'Register');
 
