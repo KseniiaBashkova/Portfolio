@@ -52,6 +52,7 @@ class RegistrationPresenter extends \Nette\Application\UI\Presenter
                 'id' => $lastId,
                 'name' => $values->name,
                 'email' => $values->email,
+                // Zahashuje heslo
                 'password_hash' => \Nette\Security\Passwords::hash($values->pwd),
             ]);
         };

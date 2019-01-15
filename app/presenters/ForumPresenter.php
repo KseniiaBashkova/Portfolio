@@ -21,6 +21,10 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
 
 //    Tato funkce vypisuji username na Forum a zapisuje data do databazy a sortuje je podle "date"
 
+    /**
+     * @param $postId
+     * @throws \Nette\Application\AbortException
+     */
     public function renderDefault($postId)
     {
 //      Jestli uzivatel prehlasen vezme s database name a vypise ve Forum
@@ -50,6 +54,7 @@ class ForumPresenter extends  \Nette\Application\UI\Presenter
         $form->addSubmit('send', 'Send');
 
         // volá se po úspěšném odeslání formuláře
+
 
         $form->onSuccess[] = function () use ($form) {
             $values = $form->getValues();

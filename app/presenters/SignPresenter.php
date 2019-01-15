@@ -13,6 +13,9 @@ use Nette\Application\UI\Form;
 class SignPresenter extends \Nette\Application\UI\Presenter
 {
 //    Vytvoreni formulare a validace na urovni jednotlivych polozek
+    /**
+     * @return Form
+     */
     protected function createComponentSignInForm()
     {
         $form = new Form;

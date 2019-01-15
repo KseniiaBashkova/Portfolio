@@ -1,4 +1,4 @@
-hs.graphicsDir = 'css/graphics/';
+// hs.graphicsDir = 'css/graphics/';
 if (!hs) { var hs = {
 // Language strings
 lang : {
